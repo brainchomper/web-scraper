@@ -12,8 +12,7 @@ var mongoose = require("mongoose");
 var db = require("./models");
 
 // Set port to listen on
-var PORT = 3000;
-
+var PORT = process.env.PORT || 8080;
 // Initialize Express
 var app = express();
 
